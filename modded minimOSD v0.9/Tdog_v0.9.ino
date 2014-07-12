@@ -191,22 +191,16 @@ void loop()
         waitingMAVBeats = 0;
         lastMAVBeat = millis();//Preventing error from delay sensing
     }
-         
+    
     read_mavlink();
     mavlinkTimer.Run();
      
-      update_diversity();          
-      timer = 0;
-      if (digitalRead(headingLock_switch) == LOW)
-     {
-      AntT_Configure();
-     }
+    update_diversity();          
+    if (digitalRead(headingLock_switch) == LOW)
+    {
+     AntT_Configure();
+    }
     AntT_update();
-    
-    //without this delay the osd resets all 10s. dont know why yet...?!? has driven me crazy!!!
-    //delay(1);
-    Serial.println("//without this delay the osd resets all 10s. dont know why yet...?!? has driven me crazy!!!");
-    
 }
 
 /* *********************************************** */
