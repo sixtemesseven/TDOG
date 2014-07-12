@@ -1,0 +1,10 @@
+Based on the original minimOSD
+
+I haven't tested the code on a 1284/2560 yet so I left the 328 in place.
+
+- HM-TRP module for telemetry
+- max4310 video mux & amp.
+- 74*1G53 audio mux
+
+- boscam / foxtec module, many modules with the same footprint available in 5.8 and 2.4GHz, can be sourced from aliexpress and co...
+

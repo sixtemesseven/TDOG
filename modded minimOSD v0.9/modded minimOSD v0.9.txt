@@ -1,0 +1,3 @@
+Moddified minimOSD
+
+manly changes in config.h and vars.h + extras.ino
